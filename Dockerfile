@@ -1,13 +1,5 @@
-ARG CI_SERVER_HOST
-ARG CI_JOB_TOKEN
-ARG CI_PROJECT_NAMESPACE
-
 FROM golang:1.20.5-alpine3.17 AS builder
-
-ARG CI_SERVER_HOST
-ARG CI_JOB_TOKEN
-ARG CI_PROJECT_NAMESPACE
-
+RUN apk add --no-cache git
 WORKDIR /src
 COPY go.mod go.sum ./
 RUN go mod download
