@@ -3,8 +3,8 @@ module github.com/librescan-org/backend-scraper
 go 1.20
 
 require (
-	github.com/librescan-org/backend-db v0.0.0-20230928160605-e9a014d9fa29
 	github.com/ethereum/go-ethereum v1.13.2
+	github.com/librescan-org/backend-db v0.0.0-20230928232544-a821c97999ce
 )
 
 require (
