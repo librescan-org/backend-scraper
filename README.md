@@ -39,8 +39,8 @@ If you want to scrape a chain that is not Ethereum Mainnet, provide the chain's 
 GENESIS_JSON_PATH=""
 ```
 
-Periodic status logging is enabled by default and is set to 1 second. The value is a Go duration string, for example "1s" for one second, which is equivalent to "1", since seconds are the default unit in the standard. To disable this logging, set to "0". To set a specific duration for the logging frequency, see the official Go documentation for [time.ParseDuration](https://pkg.go.dev/time#ParseDuration). Negative durations are rejected.
+Periodic status logging is enabled by default and is set to 15 second. The value is a Go duration string, for example "1s" for one second. To disable logging, set to "0". To set a specific duration for the logging frequency, see the official Go documentation for [time.ParseDuration](https://pkg.go.dev/time#ParseDuration). Negative durations are rejected.
 
 ```
-LOG_FREQUENCY="1"
+LOG_FREQUENCY="15s"
 ```

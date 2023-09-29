@@ -25,7 +25,7 @@ func main() {
 	}
 	var err error
 	if env_LOG_FREQUENCY == "" {
-		env_LOG_FREQUENCY = "0"
+		env_LOG_FREQUENCY = "15s"
 	}
 	logFrequency, err = time.ParseDuration(env_LOG_FREQUENCY)
 	if err != nil {
